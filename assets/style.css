@@ -10,6 +10,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     --bkg-nav: rgb(0 132 253);
 }
 
@@ -24,24 +25,27 @@ a {
 .big-container {
     max-width: 1200px;
     margin: auto;
+    padding-inline: 1.5rem;
 }
 
 /* START HEADER */
 
 header {
-    background-color: var(--bkg-nav)
+    background-color: var(--bkg-nav);
+    margin-bottom: 2.5rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
+    white-space: nowrap;
 }
 
 nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 nav li a {
@@ -51,13 +55,88 @@ nav li a {
 .btn-get {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border-radius: 25px;
-    padding: 0.5em 0.7em;
+    border-radius: 1.5rem;
+    padding: .5rem .8rem;
 }
 
-.hamburger {
+.menu-none {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     display: none;
 }
 
-
 /* START MAIN */
+
+
+/* SECTION CARDS */
+
+.grid {
+	--gapx: 1.5rem;
+	--gapy: 1.5rem;
+    overflow: hidden;
+}
+
+.cells {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cell .card {
+    padding-inline: 2rem;
+	height: 100%;
+}
+
+.card {
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(181,221,255);
+}
+
+.big-card {
+    display: flex;
+}
+
+.demo-txt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+    gap: 1.5rem;
+    width: 70%;
+}
+
+.card img {
+    min-width: 200px;
+    width: 30%;
+}
+
+.cells {
+	margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
+}
+
+.cell {
+	flex-basis: 33.3333%;
+	padding: 0 calc(var(--gapx) / 2) var(--gapy);
+}
+
+.big-cell {
+	flex-basis: 66.6666%;
+}
+
+@media screen and (max-width: 850px) {
+    
+    .big-container {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-none {
+        display: block;
+    }
+
+}
+
+/* SECTION STRATEGIC PLANNING */
