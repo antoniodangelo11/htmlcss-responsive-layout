@@ -171,8 +171,9 @@ nav li a {
     max-width: 1000px;
     margin: auto;
     display: flex;
-    gap: 1rem;
-    padding: 10rem 15rem 3rem 9rem;
+    gap: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
 }
 
 .dev-left {
@@ -182,7 +183,7 @@ nav li a {
 
 .dev-left img {
     min-width: 200px;
-    width: 70%;
+    width: 100%;
     margin-bottom: 6rem;
 }
 
@@ -214,5 +215,5 @@ nav li a {
 
 .dev-right img {
     min-width: 200px;
-    width: 30%;
+    width: 100%;
 }
