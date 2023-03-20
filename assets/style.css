@@ -10,7 +10,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     --bkg-nav: rgb(0 132 253);
 }
 
@@ -77,41 +77,9 @@ nav li a {
 }
 
 .cells {
+    margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.cell .card {
-    padding-inline: 2rem;
-	height: 100%;
-}
-
-.card {
-    text-align: center;
-    border-radius: 20px;
-    background-color: rgb(181,221,255);
-}
-
-.big-card {
-    display: flex;
-}
-
-.demo-txt {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-self: center;
-    gap: 1.5rem;
-    width: 70%;
-}
-
-.card img {
-    min-width: 200px;
-    width: 30%;
-}
-
-.cells {
-	margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
 }
 
 .cell {
@@ -123,6 +91,49 @@ nav li a {
 	flex-basis: 66.6666%;
 }
 
+
+.card {
+    background-color: rgb(181,221,255);
+    border-radius: 20px;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.big-card {
+    display: flex;
+}
+
+.demo-txt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: var(--gapy);
+    width: 70%;
+}
+
+.card > i {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: var(--bkg-nav);
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+    color: var(--bkg-nav);
+}
+
+.card p {
+    line-height: 2;
+    font-weight: 600;
+    color: rgb(90,110,127);
+}
+
+.card img {
+    align-self: flex-end;
+    min-width: 200px;
+    width: 30%;
+}
 @media screen and (max-width: 850px) {
     
     .big-container {
