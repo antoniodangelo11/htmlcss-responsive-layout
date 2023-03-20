@@ -1,0 +1,63 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL SETTINGS */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --bkg-nav: rgb(0 132 253);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.big-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* START HEADER */
+
+header {
+    background-color: var(--bkg-nav)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+}
+
+.btn-get {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 0.5em 0.7em;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* START MAIN */
