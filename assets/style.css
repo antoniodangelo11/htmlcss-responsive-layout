@@ -288,22 +288,31 @@ nav li a {
 
 /* SECTION BENEFITS */
 
+.ben-title {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
 .benefit-box {
-    margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
-	display: flex;
+    display: flex;
 	flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 4rem;
 }
 
 .ben-box {
-	flex-basis: 33.3333%;
-	padding: 0 calc(var(--gapx) / 2) var(--gapy);
+	flex: calc(100% / 3 - 2rem);
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     height: 100%;
-    padding-top: 2rem;
-    text-align: left;
 }
 
 .ben-content {
     margin: 1rem;
 }
+
+/* SECTION ABOUT US */
+
