@@ -409,10 +409,62 @@ nav li a {
 /* SECTION STARTED */
 
 .started-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     text-align: center;
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
+
+.started-content > span {
+    font-size: 1.2rem;
+    color: rgb(207,206,242);
+}
+
+.started-content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.started-content h2 {
+    color: rgb(253,193,95);
+    font-size: 5rem;
+}
+
+.started-content p {
+    color: rgb(255, 255, 255);
+}
+
+
+.started-content > a {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5.5rem;
+    padding: 1.5rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    width: 30%;
+    color: var(--bkg-purple);
+}
+
+.started-end span {
+    color: rgb(255, 255, 255)
+}
+
+.small-circle {
+    vertical-align: middle;
+    font-size: .5rem;
+}
+
+.started-end a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+
+
 
 /* FOOTER */
 
@@ -489,11 +541,15 @@ footer {
     }
 
     .text-left {
-        flex: 0 0 50%;
+        flex: 0 0 70%;
     }
 
     .text-right {
         flex: 0 0 25%;
+    }
+
+    .marks {
+        font-size: 5rem;
     }
 
 }
@@ -588,11 +644,16 @@ footer {
         /* SECTION ABOUT US */
     
         .abt-us {
+            padding-inline: 1.5rem;
             justify-content: center;
         }
     
         .text-left {
             flex: 0 0 50%;
+        }
+
+        .text-left h2 {
+            font-size: 2.5rem;
         }
     
         .text-right {
