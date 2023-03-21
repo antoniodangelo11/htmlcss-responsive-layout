@@ -464,19 +464,27 @@ nav li a {
 }
 
 
-
-
 /* FOOTER */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 13rem;
+    height: 15rem;
     background-color: rgb(51,51,51);
     color: rgb(255, 255, 255);
+}
+
+
+.footer-content {
+    padding-top: 2.5rem;
+}
+
+.foot-up {
+    padding-bottom: 3rem;
+}
+
+.foot-down a {
+    color: var(--bkg-purple);
+    text-decoration: underline;
 }
 
 
