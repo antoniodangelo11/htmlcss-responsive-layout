@@ -28,6 +28,12 @@ a {
     padding-inline: 1.5rem;
 }
 
+.grid {
+	--gapx: 1.5rem;
+	--gapy: 1.5rem;
+    margin-bottom: 5rem;
+}
+
 /* START HEADER */
 
 header {
@@ -69,13 +75,6 @@ nav li a {
 
 
 /* SECTION CARDS */
-
-.grid {
-	--gapx: 1.5rem;
-	--gapy: 1.5rem;
-    overflow: hidden;
-    margin-bottom: 5rem;
-}
 
 .cells {
     margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
@@ -250,11 +249,12 @@ nav li a {
     text-align: center;
 }
 
-.testimonial-title p, h2 {
+.testimonial-title p {
     margin-bottom: 2rem;
 }
 
-.testimonial-title h2 {
+.testimonial-title > h2 {
+    padding-bottom: 2rem;
     font-size: 2.5rem;
     color: var(--bkg-purple);
 }
@@ -288,3 +288,22 @@ nav li a {
 
 /* SECTION BENEFITS */
 
+.benefit-box {
+    margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ben-box {
+	flex-basis: 33.3333%;
+	padding: 0 calc(var(--gapx) / 2) var(--gapy);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 100%;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+.ben-content {
+    margin: 1rem;
+}
