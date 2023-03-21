@@ -30,6 +30,12 @@ a {
     overflow: hidden;
 }
 
+.small-container {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .grid {
 	--gapx: 1.5rem;
 	--gapy: 1.5rem;
@@ -77,22 +83,6 @@ nav li a {
     display: none;
 }
 
-@media (max-width: 850px) {
-    
-    .big-container {
-        width: 100%;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu-none {
-        display: block;
-    }
-
-}
-
 /* START MAIN */
 
 
@@ -113,7 +103,6 @@ nav li a {
     width: 66.6666%;
 	flex-basis: auto;
 }
-
 
 .card {
     background-color: rgb(181,221,255);
@@ -141,9 +130,8 @@ nav li a {
 .card img {
     align-self: flex-end;
     min-width: 0;
-    flex: 0 0 50%;
+    flex: 0 0 35%;
     display: block;
-    aspect-ratio: 1 / 1;
 }
 
 .card > i {
@@ -177,6 +165,7 @@ nav li a {
 /* SECTION STRATEGIC PLANNING */
 
 .bkg-purple {
+    width: 100%;
     background-color: var(--bkg-purple);
 }
 
@@ -275,7 +264,7 @@ nav li a {
     gap: 1rem;
     margin: 1rem 0;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .user * p {
@@ -352,12 +341,6 @@ nav li a {
 
 /* SECTION STARTED */
 
-.small-container {
-    width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
 .started-content {
     text-align: center;
     padding-bottom: 5rem;
@@ -375,4 +358,178 @@ footer {
     height: 13rem;
     background-color: rgb(51,51,51);
     color: rgb(255, 255, 255);
+}
+
+
+/* MEDIA QUERY */
+
+
+/* MEDIA TABLET */
+
+@media screen and (max-width: 850px) {
+
+    /* CONTAINER */
+    
+    .big-container {
+        width: 100%;
+    }
+
+    .small-container {
+        width: 100%;
+    }
+
+    /* HEADER */
+
+    .menu {
+        display: none;
+    }
+
+    .menu-none {
+        display: block;
+    }
+
+    /* SECTION CARDS */
+
+    .demo-txt {
+        flex: 0 0 100%;
+    }
+
+    .card img {
+        padding-top: 2rem;
+    }
+
+    /* SECTION PLANNING */
+
+    .plan-content {
+        padding-inline: 1.5rem;
+        display: block;
+    }
+
+    .dev-left img {
+        margin-bottom: 0rem;
+    }
+
+    /* SECTION BENEFITS */
+
+    .ben-box {
+        flex: calc(100% / 2 - 2rem);
+    }
+
+    /* SECTION ABOUT US */
+
+    .abt-us {
+        justify-content: center;
+    }
+
+    .text-left {
+        flex: 0 0 50%;
+    }
+
+    .text-right {
+        flex: 0 0 25%;
+    }
+
+}
+
+/* MEDIA MOBILE */
+
+@media (max-width: 375px) {
+
+        /* CONTAINER */
+    
+        .big-container {
+            width: 100%;
+        }
+    
+        .small-container {
+            width: 100%;
+        }
+    
+        /* HEADER */
+    
+        .menu {
+            display: none;
+        }
+    
+        .menu-none {
+            display: block;
+        }
+    
+        /* SECTION CARDS */
+    
+        .cells {
+            flex-direction: column;
+        }
+
+        .big-cell {
+            width: 100%;
+        }
+
+        .card p {
+            margin-bottom: 0rem;
+            padding-bottom: 1rem;
+            padding-inline: .5rem;
+        }
+
+        .card img {
+            flex: 0 0 95%;
+        }
+    
+        /* SECTION PLANNING */
+    
+        .plan-content {
+            padding-top: 2rem;
+            padding-inline: 1.5rem;
+            display: block;
+        }
+
+        .dev-left {
+            gap: 1.5rem;
+        }
+    
+        .dev-left img {
+            margin-bottom: 0rem;
+        }
+
+
+        /* SECTION TESTIMONIALS */
+
+        .all-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user {
+            display: block;
+        }
+
+    
+        /* SECTION BENEFITS */
+    
+        .abt-us {
+            flex-direction: column;
+        }
+
+        .ben-box {
+            flex: 0 0 100%;
+        }
+
+        .text-right img {
+            align-self: left;
+        }
+    
+        /* SECTION ABOUT US */
+    
+        .abt-us {
+            justify-content: center;
+        }
+    
+        .text-left {
+            flex: 0 0 50%;
+        }
+    
+        .text-right {
+            flex: 0 0 25%;
+        }
+    
 }
