@@ -667,5 +667,9 @@ footer {
         .text-right {
             flex: 0 0 25%;
         }
+
+        .marks {
+            left: 0;
+        }
     
 }
