@@ -353,3 +353,17 @@ nav li a {
 
 /* SECTION STARTED */
 
+.xsmall-container {
+    width: 800px;
+    margin: auto;
+    padding-inline: 1.5rem;
+    padding-top: 5rem;
+}
+
+.started-content {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+/* FOOTER */
+
