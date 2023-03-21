@@ -183,6 +183,7 @@ nav li a {
     padding-inline: 1.5rem;
     padding-top: 10rem;
     padding-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .dev-left {
@@ -244,4 +245,46 @@ nav li a {
 }
 
 /* SECTION TESTIMONIALS */
+
+.testimonial-title {
+    text-align: center;
+}
+
+.testimonial-title p, h2 {
+    margin-bottom: 2rem;
+}
+
+.testimonial-title h2 {
+    font-size: 2.5rem;
+    color: var(--bkg-purple);
+}
+
+.all-user {
+    padding-bottom: 2rem;
+}
+
+.user {
+    background-color: var(--bkg-purple);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.user * p {
+    color: rgb(255, 255, 255);
+    margin: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.user img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+/* SECTION BENEFITS */
 
