@@ -570,9 +570,11 @@ footer {
     
         .big-container {
             width: 100%;
+            padding-inline: 1.5rem;
         }
     
         .small-container {
+            padding-inline: 1.5rem;
             width: 100%;
         }
     
@@ -632,6 +634,13 @@ footer {
 
         .user {
             display: block;
+            text-align: center;
+        }
+
+        .user img {
+            height: 15rem;
+            width: 15rem;
+            border-radius: 150px;
         }
 
     
