@@ -680,5 +680,11 @@ footer {
         .marks {
             left: 0;
         }
+
+        /* SECTION STARTED */
+
+        .started-content > a {
+            width: 35%;
+        }
     
 }
