@@ -171,7 +171,7 @@ nav li a {
 
 .plan-content {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     padding-inline: 13rem;
     padding-top: 10rem;
     padding-bottom: 3rem;
@@ -441,7 +441,7 @@ nav li a {
 .started-content > a {
     background-color: rgb(255, 255, 255);
     border-radius: 5.5rem;
-    padding: 1.5rem 1rem;
+    padding: 2rem 0rem;
     font-weight: 700;
     text-align: center;
     white-space: nowrap;
